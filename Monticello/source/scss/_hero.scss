@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.slider__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.hero {
+    position: relative;
+    background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+    margin-bottom: 100px;
+    &__img {
+        opacity: 0;
+    }
+    &__title {
+        font-size: 80px;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+        color: $white;
+    }
+    &__subtitle {
+        line-height: 22px;
+        letter-spacing: 0.3em;
+        color: $white;
+    }
+}
+.pagination {
+    gap: 40px;
+    right: 40px;
+}
+.pagination__dots {
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid $white;
+    width: 10px;
+    height: 10px;
+    &.is-active {
+        width: 10px;
+        height: 10px;
+    }
+}
+.next__page {
+    position: absolute;
+    bottom: 60px;
+    right: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+}

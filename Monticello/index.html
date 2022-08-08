@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./source/img/favico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./source/img/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./source/img/favico/favicon-16x16.png">
+        <link rel="manifest" href="./source/img/favico/site.webmanifest">
+        <link rel="stylesheet" href="./source/css/reset_style.css" />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+        />
+        <script
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCte5veDWONiouaAErMYafJ7cbCc5gfoY4"
+        ></script>
+        <script src="./source/js/main.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./source/css/style.css" />
+        <link
+            rel="stylesheet"
+            src="https://cdn.jsdelivr.net/combine/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css,npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css,npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css"
+        />
+
+        <script
+            src="https://kit.fontawesome.com/71e4d3417c.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Monticello</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper header__wrapper">
+
+                    <a href="#" class="logo">
+                        <img src="./source/img/Logo.svg" alt="Logo" />
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#about_us" class="nav__link"
+                                    >About us</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#projects" class="nav__link"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#news" class="nav__link">News</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contacts" class="nav__link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="social">
+                            <div class="social__container">
+                                <a href="https://www.instagram.com" class="social__link">
+                                    <span class="fa fa-instagram social__ico " aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="social__container">
+                                <a href="https://www.twitter.com" class="social__link">
+                                    <span class="fa fa-twitter social__ico" aril__link-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="social__container">
+                                <a href="https://uk-ua.facebook.com" class="social__link">
+                                    <span class="fa fa-facebook social__ico" aria-hidden="true"></span>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                
+            </div>
+        </div>
+    </header>
+        <main>
+            <section class="hero">
+                <div
+                    id="hero__slider"
+                    class="splide"
+                    role="group"
+                    aria-label="Splide Basic HTML Example"
+                >
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img
+                                    src="./source/img/hero/hero_houses.png"
+                                    alt="Buildings"
+                                />
+                                <div class="slider__text">
+                                    <h1 class="title hero__title">
+                                        Simple & Modern
+                                    </h1>
+                                    <h2 class="subtitle hero__subtitle">
+                                        We make the world beautiful everyday
+                                    </h2>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    class="hero__img"
+                                    src="./source/img/hero/hero_houses.png"
+                                    alt="Buildings"
+                                />
+                                <div class="slider__text">
+                                    <h1 class="title hero__title">
+                                        Beauty & Architecture
+                                    </h1>
+                                    <h2 class="subtitle hero__subtitle">
+                                        We make the world beautiful everyday
+                                    </h2>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    class="hero__img"
+                                    src="./source/img/hero/hero_houses.png"
+                                    alt="Buildings"
+                                />
+                                <div class="slider__text">
+                                    <h1 class="title hero__title">
+                                        Dogs & Cats
+                                    </h1>
+                                    <h2 class="subtitle hero__subtitle">
+                                        Say what?
+                                    </h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                <span class="next__page">
+                    <a href="#projects"><img src="./source/img/Arrow.svg" alt=""></a>
+                </span>
+            </section>
+            <section class="projects" id="projects">
+                <div class="wrapper projects--flex">
+                    
+                        <h2 class="title projects__title">What we do</h2>
+                        <article class="projects__container ">
+                            <div class="projects__article first__article">
+                                <h2 class="title container__title">
+                                    One world
+                                </h2>
+                                <h3 class="subtitle container__subtitle">Trade center</h3>
+                                <p class="projects__text">
+                                    Increasing prosperity in our lives can be
+                                    accomplished by having the right frame of mind.
+                                    The truth is, our thoughts are very powerful.
+                                </p>
+                                <button class="button projects__btn">More details</button>
+                                <div class="location">
+                                    <span
+                                        class="fa-solid fa-location-dot location__dot"
+                                    >
+                                    </span>
+                                    <span class="location__text"
+                                        >New York City, United States - 1776
+                                        feet</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="projects__img first__img ">
+                                <img
+                                    class=""
+                                    src="./source/img/trade__center.png"
+                                    alt="Our trade center"
+                                />
+                            </div>
+                            <div class="shadow"></div>
+                        </article>
+                        <article class="projects__container">
+                            <div class="projects__article">
+                                <h2 class="title container__title">
+                                    International
+                                </h2>
+                                <h3 class="subtitle container__subtitle">
+                                    Commerce centre
+                                </h3>
+                                <p class="projects__text">
+                                    Successful businesses have many things in
+                                    common, today we’ll look at the big ‘R’ of
+                                    recognition and how a digital advertising
+                                    network may help.
+                                </p>
+                                <button class="button projects__btn">More details</button>
+                                <div class="location">
+                                    <span
+                                        class="fa-solid fa-location-dot location__dot"
+                                    >
+                                    </span>
+                                    <span class="location__text">
+                                        Hong Kong - 1588 feet
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="projects__img">
+                                <img
+                                    src="./source/img/commerce__center.png"
+                                    alt="Our commerce centre"
+                                />
+                            </div>
+                            <div class="shadow--purple"></div>
+                        </article>
+                    
+                </div>
+            </section>
+            <section class="news" id="news">
+                <!-- Slider -->
+                <div class="wrapper news__wrapper">
+                    <h2 class="title news__title--upper">Latest news </h2>
+                    <div
+                        id="slider2"
+                        class="splide"
+                        role="group"
+                        aria-label="Splide Basic HTML Example"
+                    >
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                            <span class="fa-solid fa-angle-left"></span>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <span class="fa-solid fa-angle-right"></span>
+                        </button>
+                  </div>
+                        <div class="splide__track news__splide">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="#" class="news__container">
+                                        <div class="news__img">
+                                            <img
+                                                src="./source/img/News/News1.png"
+                                                alt="News picture"
+                                            />
+                                        </div>
+                                        <div class="news__preview">
+                                            <h2 class="title news__title">
+                                                See the unmatched beauty of the great.
+                                            </h2>
+                                            <p class="news__text">
+                                                Free directories: directories are
+                                                perfect for customers that are searching
+                                                for...
+                                            </p>
+                                            <div class="redactor">
+                                                <div class="redactor__pic">
+                                                    <img
+                                                    src="./source/img/News/Alja.png"
+                                                    alt="redactor"
+                                                    />
+                                                </div>
+                                                <div class="redactor__info">
+                                                    <h3 class="title redactor__name">
+                                                        Alja Brun
+                                                    </h3>
+                                                    <span class="title redactor__date"
+                                                    >20 Jan 2020</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="news__container">
+                                        <div class="news__img">
+                                            <img
+                                                src="./source/img/News/news2.png"
+                                                alt="News picture"
+                                            />
+                                        </div>
+                                        <div class="news__preview">
+                                            <h2 class="title news__title">
+                                                Effective advertising pointers.
+                                            </h2>
+                                            <p class="news__text">
+                                                Having a home based business is a
+                                                wonderful asset to your life...
+                                            </p>
+                                            <div class="redactor">
+                                                <div class="redactor__pic">
+                                                    <img
+                                                        src="./source/img/News/dominic.png"
+                                                        alt="redactor"
+                                                    />
+                                                </div>
+                                                <div class="redactor__info">
+                                                    <h3 class="title redactor__name">
+                                                        Dominic Freeman
+                                                    </h3>
+                                                    <span class="title redactor__date"
+                                                        >13 Dec 2019</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="news__container">
+                                        <div class="news__img">
+                                            <img
+                                                src="./source/img/News/new3.png"
+                                                alt="News picture"
+                                            />
+                                        </div>
+                                        <div class="news__preview">
+                                            <h2 class="title news__title">
+                                                Hypnotize yourself into the ghost.
+                                            </h2>
+                                            <p class="news__text">
+                                                There are many things that are important
+                                                to catalog design...
+                                            </p>
+                                            <div class="redactor">
+                                                <div class="redactor__pic">
+                                                    <img
+                                                        src="./source/img/News/alice.png"
+                                                        alt="redactor"
+                                                    />
+                                                </div>
+                                               <div class="redactor__info">
+                                                    <h3 class="title redactor__name">
+                                                        Alice Ward
+                                                    </h3>
+                                                    <span class="title redactor__date"
+                                                        >30 Nov 2019</span
+                                                    >
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="news__container">
+                                        <div class="news__img">
+                                            <img
+                                                src="./source/img/News/new3.png"
+                                                alt="News picture"
+                                            />
+                                        </div>
+                                        <div class="news__preview">
+                                            <h2 class="title news__title">
+                                                Lorem ipsum dolor sit amet.
+                                            </h2>
+                                            <p class="news__text">
+                                                Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Numquam, quam...
+                                            </p>
+                                            <div class="redactor">
+                                                <div class="redactor__pic">
+                                                    <img
+                                                        src="./source/img/News/alice.png"
+                                                        alt="redactor"
+                                                    />
+                                                </div>
+                                                <div class="redactor__info">
+                                                    <h3 class="title redactor__name">
+                                                        Alice Ward
+                                                    </h3>
+                                                    <span class="title redactor__date"
+                                                        >30 Nov 2019</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div class="news__preview">
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="news__container">
+                                        <div class="news__img">
+                                            <img
+                                                src="./source/img/News/new3.png"
+                                                alt="News picture"
+                                            />
+                                        </div>
+                                        <div class="news__preview">
+                                            <h2 class="title news__title">
+                                                Lorem ipsum dolor sit amet.
+                                            </h2>
+                                            <p class="news__text">
+                                                Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Numquam, quam...
+                                            </p>
+                                            <div class="redactor">
+                                                <div class="redactor__pic">
+                                                    <img
+                                                        src="./source/img/News/alice.png"
+                                                        alt="redactor"
+                                                    />
+                                                </div>
+                                                <div class="redactor__info">
+                                                    <h3 class="title redactor__name">
+                                                        Alice Ward
+                                                    </h3>
+                                                    <span class="title redactor__date"
+                                                        >30 Nov 2019</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#"  class="news__container">
+                                        <div class="news__img">
+                                            <img
+                                                src="./source/img/News/new3.png"
+                                                alt="News picture"
+                                            />
+                                        </div>
+                                       <div class="news__preview">
+                                            <h2 class="title news__title">
+                                                Lorem ipsum dolor sit amet.
+                                            </h2>
+                                            <p class="news__text">
+                                                Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Numquam, quam...
+                                            </p>
+                                            <div class="redactor">
+                                                <div class="redactor__pic">
+                                                    <img class="redactor__pic"
+                                                        src="./source/img/News/alice.png"
+                                                        alt="redactor"
+                                                    />
+                                                </div>
+                                                <div class="redactor__info">
+                                                    <h3 class="title redactor__name">
+                                                        Alice Ward
+                                                    </h3>
+                                                    <span class="title redactor__date"
+                                                        >30 Nov 2019</span
+                                                    >
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+               
+                <div class="wrapper gallery__wrapper">
+                    <h2 class="title gallery__title">Gallery</h2>
+                    <div class="photos gallery__photos">
+                        <div class="gallery__img" id="pic_0">
+                            <img
+                                src="./source/img/Gallery/main-pic.png"
+                                alt="gallery example"
+                            />
+                        </div>
+                        <div class="gallery__img" id="pic_1">
+                            <img
+                                src="./source/img/Gallery/pic2.png"
+                                alt="gallery example"
+                            />
+                        </div>
+                        <div class="gallery__img" id="pic_2">
+                            <img
+                                src="./source/img/Gallery/pic3.png"
+                                alt="gallery example"
+                            />
+                        </div>
+                        <div class="gallery__img" id="pic_3">
+                            <img
+                                src="./source/img/Gallery/pic4.png"
+                                alt="gallery example"
+                            />
+                        </div>
+                        <div class="gallery__img" id="pic_4">
+                            <img
+                                src="./source/img/Gallery/pic5.png"
+                                alt="gallery example"
+                            />
+                        </div>
+                    </div>
+                    <button class="button gallery__btn">See more</button>
+                    <div class="modal">
+                        <div class="modal__container">
+                            <span class="fa-solid fa-xmark modal__cross" onclick="closeModal()"></span>
+                            <div class="splide" id="splide__modal" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                            <img
+                                            src="./source/img/Gallery/main-pic.png"
+                                            alt="1"
+                                            />
+                                          </li>
+                                          <li class="splide__slide">
+                                            <img
+                                            src="./source/img/Gallery/pic2.png"
+                                            alt="2"
+                                            />
+                                          </li>
+                                          <li class="splide__slide"><img
+                                            src="./source/img/Gallery/pic3.png"
+                                            alt="3"
+                                            />
+                                           </li>
+                                           <li class="splide__slide"><img
+                                            src="./source/img/Gallery/pic4.png"
+                                            alt="4"
+                                            />
+                                           </li>
+                                           <li class="splide__slide"><img
+                                            src="./source/img/Gallery/pic5.png"
+                                            alt="5"
+                                            />
+                                           </li>
+                                           
+                                      </ul>
+                                </div>
+                              </div>
+                            <button class="button modal__btn" onclick="closeModal()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="map" class="map">
+        </main>
+        <footer class="footer">
+            
+            <div class="contacts" id="contacts">
+                <h2 class="title contacts__title">Get in touch</h2>
+                <div class="contacts--flex">
+                    <div class="contacts__details">
+                        <address class="details__text"
+                            ><span
+                                class="fa-solid fa-location-dot contacts__ico"
+                            ></span>
+                            91 Nolan Extensions Suite 670
+                    </address>
+                        <a href="tel:+001 356-868-2454" class="details__text">
+                            <span class="fa-solid fa-phone contacts__ico"></span>
+                            +001 356-868-2454
+                        </a>
+                        <a href="mailto:montichello@service.com" class="details__text">
+                            <span class="fa-solid fa-inbox contacts__ico"></span>
+                            montichello@service.com
+                        </a>
+                        <span class="details__text">
+                            <span class="fa-solid fa-clock contacts__ico"></span>
+                            From 07:05AM to 19:30PM
+                        </span>
+                    </div>
+                    <form class="contacts__form" action="">
+                        <input type="text" placeholder="Fullname" name="Fullname" id="fullname" />
+                        <input type="email"placeholder="Email" name="email" id="email" />
+                        <input type="submit" class="button submit__btn" value="SUBMIT" />
+                    </form>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <a href="#" class="logo">
+                    <img src="./source/img/Logo.svg" alt="Logo" />
+                    <span class="logo__text">
+                        Copyrights © 2020 Montichello
+                    </span>
+                </a>
+                <div class="social">
+                    <div class="social__container">
+                        <a href="https://www.instagram.com" class="social__link">
+                            <span class="fa fa-instagram social__ico " aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="social__container">
+                        <a href="https://www.twitter.com" class="social__link">
+                            <span class="fa fa-twitter social__ico" aril__link-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="social__container">
+                        <a href="https://uk-ua.facebook.com" class="social__link">
+                            <span class="fa fa-facebook social__ico" aria-hidden="true"></span>
+                            
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>
+

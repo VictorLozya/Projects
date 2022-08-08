@@ -1,0 +1,95 @@
+@use "variables" as *;
+.logo {
+    width: 250px;
+}
+
+.header {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    top: 50px;
+    transform: translateX(50%);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    &__list {
+        display: flex;
+        gap: 70px;
+    }
+
+    &__item {
+        width: 70px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            padding: 9px 9px 0px 0px;
+            border-radius: 100%;
+            border: 1px solid $white;
+            box-sizing: border-box;
+            left: -30px;
+            top: 3px;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+    &__link {
+        font-family: $header_links;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+.nav__item:hover.nav__item::before {
+    background-color: $white;
+}
+.social {
+    display: flex;
+    gap: 20px;
+    &__link {
+        border: 1px solid $white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: white;
+
+            box-shadow: rgba(7, 240, 248, 0.17) 0px -23px 25px 0px inset,
+                rgba(7, 240, 248, 0.15) 0px -36px 30px 0px inset,
+                rgba(7, 240, 248, 0.1) 0px -79px 40px 0px inset,
+                rgba(7, 240, 248, 0.06) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(7, 240, 248, 0.09) 0px 8px 4px,
+                rgba(7, 240, 248, 0.09) 0px 16px 8px,
+                rgba(7, 240, 248, 0.09) 0px 32px 16px;
+            border: 1px solid transparent;
+        }
+    }
+    &__ico {
+        color: $white;
+        transition: all 0.3s ease;
+    }
+}
+.social__container:hover .social__ico {
+    color: $purple;
+}
