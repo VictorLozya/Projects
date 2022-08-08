@@ -1,0 +1,28 @@
+$red: #b92970;
+$yellow: #f8e800;
+$blue: #22edfa;
+$green: #15ec0e;
+$header_color: #161d28;
+$background_color: #3d3c3c;
+
+$tablet: 820px;
+$mobile: 480px;
+$desktop: 1160px;
+
+@mixin animateBgcolor {
+  animation: animateBgColor alternate-reverse 7s ease infinite;
+  @keyframes animateBgColor {
+    0% {
+      background-color: #e95b56;
+    }
+    50% {
+      background-color: #22edfa;
+    }
+    75% {
+      background-color: #bde57c;
+    }
+    100% {
+      background-color: #ffcd00;
+    }
+  }
+}

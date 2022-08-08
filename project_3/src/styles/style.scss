@@ -1,0 +1,233 @@
+@use "variables" as *;
+@import "font-mixin";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu Mono", monospace;
+  color: #c7d5e2;
+  background-color: #3d3c3c;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1250px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+.list__title {
+  @include fluid-font(22px, 30px);
+}
+.list__wrapper {
+  padding: 25px 0 25px;
+}
+.v-list-item__title {
+  text-transform: capitalize;
+}
+.button {
+  display: inline-block;
+  padding: 20px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  @media screen and (max-width: $tablet) {
+    padding: 10px;
+  }
+
+  &--primary {
+    border: 2px solid transparent;
+    font-family: "Press Start 2P", cursive;
+    @include fluid-font(15px, 18px);
+    animation: animateBtn 4s ease infinite alternate;
+    transition: all 0.3s ease;
+
+    text-transform: uppercase;
+    &:hover {
+      color: $yellow;
+      transform: scale(1.4);
+      border: transparent;
+    }
+  }
+  &--secondary {
+    background-color: transparent;
+    @include fluid-font(15px, 19px);
+    border: 2px solid $green;
+    color: $green;
+    &:hover {
+      background-color: $green;
+      text-shadow: #000000 2px 2px 2px;
+      color: white;
+    }
+  }
+}
+.theme--light.v-expansion-panels .v-expansion-panel {
+  background-color: #3d3c3c !important;
+  color: #c7d5e2;
+}
+.v-application .mr-4 {
+  margin-right: 0 !important;
+}
+.bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 25px !important;
+  cursor: pointer;
+}
+.bm-burger-bars {
+  @include animateBgcolor;
+}
+.line-style {
+  position: absolute;
+  height: 20%;
+  left: 0;
+  right: 0;
+}
+.cross-style {
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  cursor: pointer;
+}
+.bm-cross {
+  @include animateBgcolor;
+
+  height: 25px !important;
+}
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+.bm-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgb(63, 63, 65);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bm-item-list {
+  color: #b8b7ad;
+  margin-left: 10%;
+  font-size: 20px;
+}
+.bm-item-list > * {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.7em;
+}
+.bm-item-list > * > span {
+  margin-left: 10px;
+  font-weight: 700;
+  color: white;
+}
+@media screen and (max-width: $tablet) {
+  .bm-burger-button {
+    display: block;
+  }
+}
+.pagination {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  .page-item {
+    box-sizing: border-box;
+    background-color: #20bd83;
+    border: 4px solid $yellow;
+    display: inline-block;
+    border-radius: 25%;
+    font-family: "Press Start 2P", cursive;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    &:hover {
+      background-color: $blue;
+      border: 4px solid $blue;
+      & a {
+        color: $red;
+      }
+    }
+    & a {
+      text-align: center;
+      color: $yellow;
+      padding: 10px;
+      @include fluid-font(15px, 25px);
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .pagination > li.first {
+    display: none !important;
+  }
+  .pagination > li.last {
+    display: none !important;
+  }
+}
+.no-app-title {
+  @include fluid-font(24px, 40px);
+
+  font-family: "Ubuntu Mono", monospace;
+  line-height: 1.5;
+  color: $red;
+}
+.subtitle {
+  @include fluid-font(24px, 30px);
+
+  color: white;
+}
+
+@keyframes animateBtn-hover {
+  0% {
+    border: 2px solid $red;
+    color: $green;
+    background-color: $red;
+  }
+  50% {
+    border: 2px solid $blue;
+    color: $yellow;
+    background-color: $blue;
+  }
+  75% {
+    border: 2px solid $green;
+    color: $red;
+    background-color: $green;
+  }
+  100% {
+    border: 2px solid $yellow;
+    color: $blue;
+    background-color: $yellow;
+  }
+}
+@keyframes animateBtn {
+  0% {
+    border: 2px solid $red;
+    color: $yellow;
+  }
+  50% {
+    border: 2px solid $blue;
+    color: $green;
+  }
+  75% {
+    border: 2px solid $green;
+    color: $blue;
+  }
+  100% {
+    border: 2px solid $yellow;
+    color: $red;
+  }
+}
