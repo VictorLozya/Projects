@@ -1,0 +1,25 @@
+// colors
+$text-color:#4B5D68;
+$title-color: rgba(33, 35, 83, 1);
+$purple:#9C69E2;
+$pink:#F063B8;
+$media-bg-color: rgba(33, 35, 83, 0.1);
+$white: #FFFFFF;
+$green:rgb(45, 175, 45);
+$footer-border:
+    rgba(156, 105, 226, 0.2);
+
+// width
+$tablet: 820px;
+$mobile: 443px;
+$desktop: 1160px;
+@mixin footer-flex {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width:$tablet) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

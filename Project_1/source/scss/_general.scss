@@ -1,0 +1,171 @@
+@use 'variables' as *;
+@use 'font-mixin' as *;
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Bold';
+    src: url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Font added
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Avenir';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: $text-color;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: $text-color;
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Avenir Bold';
+        font-style: normal;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: center;
+        color: $white;
+        letter-spacing: 0.005em;
+        transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease  ;
+        
+        
+    &--white {
+        text-align: left;
+        padding-left: 20px;
+        width: 210px;
+        height: 60px;
+        background: $white;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+        position: relative;
+        color: $title-color;
+        @media screen and (max-width:$tablet){
+            width: 170px;
+            font-size: 14px;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 25px;
+            height: 15px;
+            background-image: url(../assets/arrow.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:50%;
+            right: 7%;
+            transform: translateY(-50%);
+            
+        }
+        
+        &:hover{
+            color: $pink;
+            background-color: #ffffffed;
+-webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, inset 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, inset 5px 5px 15px 5px rgba(0, 0, 0, 0);
+ }
+        
+        
+    }
+        
+    
+
+    &--purple {
+        background: $purple;
+        &:hover {
+                color: $purple;
+                background-color: #f063b892;
+                box-shadow: none;
+            }
+    }
+
+    &--pink {
+        background:$pink;
+        &:hover {
+                color: $white;
+                background-color: #9b69e2a1;
+                box-shadow: none;
+            }
+    }
+}
+
+.logo {
+    &__text{
+        font-size: 20px;
+        color: $title-color;
+        font-weight: bold;
+    }
+}
+
+.title {
+    font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        
+        @include fluid-font (20px, 40px);
+        line-height: 110%;   
+        color: $title-color;
+}
+
+
+.container {
+        max-width: 1160px;
+        width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
