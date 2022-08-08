@@ -1,0 +1,119 @@
+@use "variables" as *;
+.news__wrapper {
+    background-image: url(../img/News/city2.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.fa-angle-right {
+    color: $white;
+}
+.fa-angle-left {
+    color: $white;
+}
+.news__pagination {
+    padding-bottom: 120px;
+}
+.splide__arrow {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    &--next {
+        right: -100px;
+    }
+
+    &--prev {
+        left: -100px;
+    }
+}
+
+.news {
+    margin-bottom: 150px;
+    background: linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
+    padding-top: 150px;
+    &__container {
+        display: block;
+        background: $white;
+        max-width: 370px;
+        min-height: 514px;
+        padding-bottom: 30px;
+
+        background-color: $white;
+    }
+    &__title--upper {
+        margin-bottom: 150px;
+        font-size: 44px;
+        line-height: 54px;
+        text-align: center;
+        color: $white;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            border: 1px solid $white;
+            top: -30px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+    &__preview {
+        margin: 0 20px;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 250px;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 22px;
+        line-height: 27px;
+        color: $blue_color;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: $blue_color;
+        margin-bottom: 45px;
+    }
+}
+.redactor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    gap: 20;
+    &__pic {
+        & > img {
+            border-radius: 100%;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__name {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $blue_color;
+        text-transform: uppercase;
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $light__blue;
+    }
+}
